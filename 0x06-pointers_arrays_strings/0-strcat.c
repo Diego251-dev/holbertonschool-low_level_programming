@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "holberton.h"
 
 /**
@@ -9,13 +8,13 @@
 */
 char *_strcat(char *dest, char *src)
 {
-int i;
+int i, j;
 for (i = 0; dest[i] != '\0'; i++)
 {
 }
-for (int b = 0; src[b] != '\0'; b++, i++)
+for (j = 0; src[j] != '\0'; j++, i++)
 {
-dest[i] = src[b];
+dest[i] = src[j];
 }
 return (dest);
 }
