@@ -1,5 +1,4 @@
 #include "holberton.h"
-
 /**
 * _strcat - The source
 *@src: integer *
