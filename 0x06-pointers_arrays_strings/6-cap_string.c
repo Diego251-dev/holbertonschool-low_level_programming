@@ -1,17 +1,31 @@
 #include "holberton.h"
+
 /**
- * cap_string - Changue the array
- * @a: string
- * Return: Pointer
+ * cap_string - Print the string in lowercase
+ * @a: input string
+ * Return: a
  */
 char *cap_string(char *a)
 {
-int j;
-for (j = 0; a[j] != '\0'; j++)
+int b;
+int c;
+int separators[] = {',', ';', '.', '?', '"',
+'(', ')', '{', '}', ' ', '\n', '\t'};
+int valor = 32;
+for (b = 0; a[b] != '\0'; b++)
 {
-if (a[j] >= 'A' && a[j] <= 'Z')
+if (a[b] >= 'a' && a[b] <= 'z')
 {
-a[j] = a[j] + 32;
+a[b] = a[b] - valor;
+}
+valor = 0;
+for (c = 0; c <= 12; c++)
+{
+if (a[b] == separators[c])
+{
+c = 12;
+valor = 32;
+}
 }
 }
 return (a);
