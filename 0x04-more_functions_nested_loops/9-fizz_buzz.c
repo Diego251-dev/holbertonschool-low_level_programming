@@ -11,14 +11,14 @@ int i;
 for (i = 1; i <= 99; i++)
 {
 if (i % 3 == 0 && i % 5 == 0)
-printf("FizzBuzz ");
+printf("EnTuCara ");
 else if (i % 3 == 0)
-printf("Fizz ");
+printf("EnTu ");
 else if (i % 5 == 0)
-printf("Buzz ");
+printf("Cara ");
 else
 printf("%i ", i);
 }
-printf("Buzz\n");
+printf("Cara\n");
 return (0);
 }
