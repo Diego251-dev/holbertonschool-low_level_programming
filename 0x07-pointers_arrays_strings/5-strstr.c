@@ -17,11 +17,11 @@ for (j = 0; needle[j] != '\0'; j++)
 {
 for (k = 0; haystack[i] <= needle[j]; k++)
 {
-if (needle[j] != k)
+if (haystack[k] != needle[j] || haystack[k] == '\0')
 {
 return (needle);
 }
-if (haystack[i] == needle[j])
+if (needle[j] == 0)
 {
 return (0);
 }
